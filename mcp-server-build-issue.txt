@@ -1,0 +1,17 @@
+---
+
+-- py -m venv .venv     create the virtual env
+
+--- .venv\Scripts\activate - virtual environment
+
+
+remove version current set up with old version envriosn
+
+deactivate
+Remove-Item -Recurse -Force .venv
+py -3.14 -m venv .venv
+.venv\Scripts\activate
+python --version
+
+
+pip install "mcp[cli]" pyodbc  for odbc connection for windows authetication
